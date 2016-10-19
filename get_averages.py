@@ -7,9 +7,6 @@ filename = "discobandit.db"
 database = sqlite3.connect(filename)
 cursor = database.cursor()
 
-def getStudentAverage():
-    pass
-
 try:
     getStudentDataCmd = "SELECT name, mark, students.id FROM students, courses WHERE students.id == courses.id"
     cursor.execute(getStudentDataCmd)
