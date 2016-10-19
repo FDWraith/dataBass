@@ -31,7 +31,7 @@ try:
     for name in studentsGrade:
         studentAvg = float(studentsGrade[name]) / studentsNumCourses[name]
         studentID = studentsIDs[name]
-        print name, studentAvg, studentID
         studentsAverage[name] = studentAvg
+        print "Student: %s, ID: %d, Avg: %d" % (name, studentID, studentAvg)
 except Exception as e:
     print "Corrupted Database..."
